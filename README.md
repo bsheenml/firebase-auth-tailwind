@@ -1,7 +1,5 @@
 ### Firebase Authorization - React + Tailwind + Reach Router
 
-**React + Firebase using Hooks and Firestore
-
 This project follows the [LogRocket React + Firebase Auth](https://blog.logrocket.com/user-authentication-firebase-react-apps/) from a blank Create React App.
 
 ## Motivation
