@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import React, { useContext } from "react";
+import { Router } from "@reach/router";
+import SignIn from "./Components/SignIn";
+import SignUp from "./Components/SignUp";
+import UserProvider from "./providers/UserProvider";
+import { UserContext } from "./providers/UserProvider";
+import Application from "./Components/Application";
+import ProfilePage from "./Components/ProfilePage";
+
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserProvider>
+      <Application />
+    </UserProvider>
   );
 }
 
